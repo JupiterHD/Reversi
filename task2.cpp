@@ -116,8 +116,12 @@ class Reversi
 
 int main()
 {
+    fin.open("input.txt");
+    fout.open("output.txt");
     Reversi board;
     board.setBoard();
     board.checkWin();
+    fin.close();
+    fout.close();
     return 0;
 }
